@@ -1,0 +1,453 @@
+:root {
+    --gold: #c5a059;
+    --dark: #121212;
+    --gray: #1e1e1e;
+    --light-gray: #2a2a2a;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--white);
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                url('fachada.jpeg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-text {
+    font-size: clamp(3rem, 10vw, 5rem);
+    color: var(--gold);
+    letter-spacing: 8px;
+    font-weight: 800;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.btn-booking {
+    background: var(--gold);
+    color: var(--dark);
+    padding: 18px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.btn-booking:hover {
+    background: var(--white);
+    letter-spacing: 1px;
+}
+
+/* Secciones */
+section { padding: 100px 10%; }
+
+h2 {
+    text-align: center;
+    color: var(--gold);
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Sobre Nosotros */
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.barber-card {
+    background: var(--gray);
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.barber-card:hover { border-color: var(--gold); }
+
+.icon-gold {
+    font-size: 3rem; /* Un poco más grande para que luzca profesional */
+    color: var(--gold);
+    margin-bottom: 15px;
+    display: block; /* Asegura que el icono esté arriba del texto */
+
+} 
+
+/*--- MEJORAS SERVICIOS INTERACTIVOS --- */
+.interactive-item {
+    transition: all 0.3s ease;
+    cursor: default;
+    border-left: 0 solid var(--gold);
+    padding: 25px 15px !important;
+}
+
+.interactive-item:hover {
+    background: var(--light-gray);
+    border-left: 5px solid var(--gold);
+    padding-left: 25px !important;
+}
+
+.service-description {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 5px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.interactive-item:hover .service-description {
+    opacity: 1;
+}
+
+/* --- ESTILOS BENEFICIOS --- */
+.benefit-card {
+    background: var(--gray);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    border-bottom: 3px solid var(--gold);
+}
+
+/* --- BLOG GRID (NUESTRO TRABAJO) --- */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.blog-card {
+    background: var(--gray);
+    overflow: hidden;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.blog-img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.blog-card:hover .blog-img img {
+    transform: scale(1.1);
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.category {
+    color: var(--gold);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.blog-content h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+.blog-content p {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para las fotos de los barberos */
+.photo-container {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px; /* Centra la foto y da espacio abajo */
+    border-radius: 50%;
+    border: 3px solid var(--gold);
+    padding: 5px; /* Espacio entre el borde dorado y la foto */
+    overflow: hidden;
+}
+
+.barber-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que la foto se estire */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.barber-card:hover .barber-photo {
+    transform: scale(1.1); /* Efecto de zoom suave al pasar el mouse */
+}
+
+/* Ajuste opcional para las tarjetas */
+.barber-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Servicios */
+#servicios { background-color: #0c0c0c; }
+
+.services-grid {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.price { color: var(--gold); font-weight: 700; }
+
+/* Galería */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    filter: brightness(0.7);
+    transition: 0.5s;
+}
+
+.gallery-grid img:hover { filter: brightness(1); transform: scale(1.02); }
+
+#ubicacion {
+    background-color: var(--dark);
+    padding-bottom: 50px;
+}
+
+.map-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid var(--gold); /* Borde dorado para mantener el estilo premium */
+    border-radius: 8px;
+    overflow: hidden; /* Para que las esquinas del mapa sigan la redondez del borde */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Hacer que el mapa sea responsivo en celulares */
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 300px;
+    }
+}
+
+/* Footer */
+footer {
+    background: var(--gray);
+    padding: 60px 10%;
+    text-align: center;
+    border-top: 2px solid var(--gold);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.social-links a {
+    background: #1877F2; /* Color oficial de Facebook */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.05);
+    background: #145dbf;
+}
+
+.location { margin-top: 20px; color: #888; }
+
+/* WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 35px;
+    line-height: 60px;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 600px) {
+    section { padding: 60px 5%; }
+}
+
+/* --- ANIMACIONES DE REVELADO --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Retraso secuencial para tarjetas (efecto cascada) */
+.barber-card:nth-child(2) { transition-delay: 0.2s; }
+.benefit-card:nth-child(2) { transition-delay: 0.2s; }
+.benefit-card:nth-child(3) { transition-delay: 0.4s; }
+
+/* --- EFECTO DE LUZ EN BOTONES --- */
+
+.btn-booking:hover::after {
+    left: 120%;
+}
+/* --- MEJORA VISUAL PARA EL BLOG (TIPO REVISTA) --- */
+.blog-card {
+    border: 1px solid rgba(208, 143, 22, 0.1);
+}
+
+.blog-card:hover {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    border-color: var(--gold);
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding: 20px 5%;
+    border-top: 1px solid #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-copyright {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.agency-credit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.agency-credit span {
+    color: #555;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nexo-seal {
+    color: var(--gold);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.nexo-link {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #fff;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 4px;
+    transition: 0.3s;
+}
+
+.digital-text {
+    color: var(--gold);
+    font-weight: 300;
+}
+
+.nexo-link:hover {
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+    transform: scale(1.05);
+}
+
+/* Animación de pulso para el botón de WhatsApp */
+@keyframes pulse-gold {
+    0% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(197, 160, 89, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); }
+}
+
+.whatsapp-float {
+    animation: pulse-gold 2s infinite;
+}
+.visitor-counter {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.8;
+}
