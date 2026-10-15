@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<script>document.documentElement.classList.add("js")</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barbería y Peluquería Yardley · Corte clásico en el Centro de Oaxaca</title>
+<meta name="description" content="Barbería y peluquería clásica desde 1958 en Díaz Ordaz 105, Centro de Oaxaca. Corte de cabello, barba, bigote y mascarilla. Abierto todos los días de 11:00 a 21:00.">
+<meta property="og:title" content="Barbería Yardley · Peluquería clásica desde 1958">
+<meta property="og:description" content="Corte clásico en el Centro de Oaxaca. Díaz Ordaz 105.">
+<meta property="og:image" content="img/fachada.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["BarberShop","HairSalon"],"name":"Barbería y Peluquería Yardley","alternateName":["Peluquería Yardley","Barbería Yardley"],
+"image":"img/fachada.jpg","telephone":"+52 951 519 7707","priceRange":"$30 - $130 MXN","foundingDate":"1958",
+"address":{"@type":"PostalAddress","streetAddress":"Díaz Ordaz 105","addressLocality":"Oaxaca de Juárez","addressRegion":"Oaxaca","postalCode":"68000","addressCountry":"MX"},
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"21:00"}],
+"hasMap":"https://www.google.com/maps?cid=16937028283605904926","sameAs":["https://www.facebook.com/share/175uvnZHYD/"],
+"makesOffer":[{"@type":"Offer","name":"Corte de cabello","price":"130","priceCurrency":"MXN"},{"@type":"Offer","name":"Corte de barba","price":"130","priceCurrency":"MXN"},{"@type":"Offer","name":"Corte de bigote","price":"30","priceCurrency":"MXN"},{"@type":"Offer","name":"Mascarilla","price":"130","priceCurrency":"MXN"}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Playfair+Display:ital,wght@0,600;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0C0B0A; --ink-2:#151311; --ink-3:#1E1B18; --line:rgba(236,226,206,.14);
+  --cream:#ECE2CE; --cream-2:#F6F0E4; --muted:#A79F90; --muted-2:#776F63;
+  --red:#B8312A; --blue:#2C4C8C; --gold:#C9A45C;
+  --serif:'Playfair Display',Georgia,serif; --sign:'Rye',Georgia,serif; --sans:Montserrat,system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font:400 16px/1.7 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+.eyebrow{font:600 12px var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 28px;font:600 13px var(--sans);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--cream);transition:background .2s,color .2s}
+.btn.solid{background:var(--cream);color:var(--ink)}
+.btn.solid:hover{background:transparent;color:var(--cream)}
+.btn.line{color:var(--cream)}
+.btn.line:hover{background:var(--cream);color:var(--ink)}
+.btn svg{width:18px;height:18px}
+.pole{height:10px;background:repeating-linear-gradient(-45deg,var(--red) 0 14px,var(--cream-2) 14px 28px,var(--blue) 28px 42px,var(--cream-2) 42px 56px)}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:40;transition:background .3s}
+.nav.solid{background:rgba(12,11,10,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.mark{text-decoration:none;line-height:1}
+.mark b{display:block;font:400 28px var(--sign);letter-spacing:.06em;color:var(--cream)}
+.mark small{display:block;font:600 9px var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-top:4px}
+.links{display:flex;gap:30px;list-style:none}
+.links a{font:600 12px var(--sans);letter-spacing:.24em;text-transform:uppercase;text-decoration:none;color:var(--cream)}
+.links a:hover{color:var(--gold)}
+@media (max-width:760px){.links li:not(:last-child){display:none}}
+
+/* hero */
+.hero{position:relative;min-height:min(100svh,920px);display:grid;align-items:end;background:#000}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:.55}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,11,10,.55) 0%,rgba(12,11,10,.1) 35%,rgba(12,11,10,.95) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-block:140px 72px;text-align:center}
+.hero h1{font-size:clamp(46px,9vw,104px);font-style:italic;font-weight:500;margin:18px auto 18px;max-width:14ch}
+.hero p{max-width:520px;margin:0 auto 32px;color:#D9D0BE;font-size:17px}
+.hero .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.since{display:inline-flex;align-items:center;gap:14px;font:400 20px var(--sign);color:var(--cream)}
+.since::before,.since::after{content:"";width:40px;height:1px;background:var(--gold)}
+
+/* sections */
+section.sec{padding-block:100px}
+.head{text-align:center;max-width:640px;margin:0 auto 56px}
+.head h2{font-size:clamp(38px,6vw,60px);margin-top:14px}
+.head p{color:var(--muted);margin-top:14px}
+
+/* menu de servicios */
+.menu{max-width:760px;margin:0 auto;display:grid;gap:8px}
+.item{display:grid;grid-template-columns:1fr auto;gap:6px 18px;padding:24px 0;border-bottom:1px solid var(--line)}
+.item h3{font-size:28px;display:flex;align-items:baseline;gap:14px}
+.item h3::after{content:"";flex:1;border-bottom:1px dotted rgba(236,226,206,.35);transform:translateY(-6px)}
+.item .price{font:500 italic 30px var(--serif);color:var(--gold);align-self:end}
+.item p{grid-column:1/-1;color:var(--muted);font-size:15px}
+.menu-cta{text-align:center;margin-top:44px}
+
+/* casa */
+.casa{background:var(--cream-2);color:var(--ink)}
+.casa .grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.casa .eyebrow{color:var(--red)}
+.casa h2{font-size:clamp(40px,5.5vw,60px);margin:14px 0 22px}
+.casa h2 em{color:var(--blue)}
+.casa p{color:#3A342C;font-size:17px;margin-bottom:16px;max-width:52ch}
+.photo{position:relative}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:sepia(.18) contrast(1.05)}
+.photo .stamp{position:absolute;right:-18px;bottom:-18px;width:132px;height:132px;border-radius:50%;background:var(--ink);color:var(--cream);display:grid;place-items:center;text-align:center;border:3px double var(--gold)}
+.stamp span{font:400 13px var(--sign);letter-spacing:.08em;line-height:1.3}
+.stamp b{display:block;font:400 30px var(--sign);color:var(--gold)}
+@media (max-width:860px){.casa .grid{grid-template-columns:1fr;gap:44px}.photo .stamp{right:12px}}
+
+/* porque */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why div{border:1px solid var(--line);padding:34px 28px;text-align:center}
+.why svg{width:40px;height:40px;color:var(--gold);margin:0 auto 18px}
+.why h3{font-size:26px;margin-bottom:10px}
+.why p{color:var(--muted);font-size:15px}
+@media (max-width:860px){.why{grid-template-columns:1fr}}
+
+/* galería */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gal div{aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#171513 0 14px,#1C1916 14px 28px);border:1px dashed rgba(236,226,206,.2);display:grid;place-items:center;text-align:center;padding:16px;color:var(--muted-2);font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.gal img{width:100%;height:100%;object-fit:cover}
+@media (max-width:700px){.gal{grid-template-columns:1fr 1fr}.gal div:last-child{grid-column:1/-1;aspect-ratio:16/9}}
+
+/* visita */
+.visit{display:grid;grid-template-columns:1fr 1.1fr;gap:0;border:1px solid var(--line)}
+.visit .info{padding:44px}
+.visit h2{font-size:clamp(36px,5vw,52px);margin:12px 0 26px}
+.visit dl{display:grid;gap:20px}
+.visit dt{font:600 11px var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.visit dd{font-size:17px}
+.visit dd a{text-decoration:none;border-bottom:1px solid var(--line)}
+.visit iframe{width:100%;height:100%;min-height:380px;border:0;filter:grayscale(1) invert(.9) contrast(.9)}
+.todo{background:#5A4410;color:#FFE7A8;padding:0 6px}
+@media (max-width:860px){.visit{grid-template-columns:1fr}.visit .info{padding:30px 24px}}
+
+footer{padding:44px 0 120px;text-align:center;border-top:1px solid var(--line)}
+footer .mark b{font-size:34px}
+footer p{color:var(--muted-2);font-size:13px;margin-top:18px}
+
+/* botón flotante CITAS (como la referencia) */
+.citas{position:fixed;right:18px;bottom:18px;z-index:50;width:92px;height:92px;border-radius:50%;background:var(--ink);border:2px solid var(--gold);display:grid;place-items:center;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.5);transition:transform .2s}
+.citas:hover{transform:scale(1.05)}
+.citas svg{width:34px;height:34px;color:var(--gold);margin:0 auto 2px}
+.citas span{display:block;font:600 10px var(--sans);letter-spacing:.3em;color:var(--gold);text-align:center}
+.side{position:fixed;left:14px;bottom:18px;z-index:50;display:grid;gap:10px}
+.side a{width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center}
+.side svg{width:20px;height:20px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+
+/* ---------- estado abierto/cerrado ---------- */
+.status{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;font:600 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--cream);border:1px solid var(--line);padding:9px 16px;border-radius:999px;margin:0 auto 30px;background:rgba(12,11,10,.4)}
+.status i{width:9px;height:9px;border-radius:50%;background:var(--muted-2);flex:none}
+.status.open i{background:#4CC27A;box-shadow:0 0 0 0 rgba(76,194,122,.6);animation:ping 2s infinite}
+.status.closed i{background:var(--red)}
+.visit .status{margin:10px 0 0;font-size:11px}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(76,194,122,.55)}80%,100%{box-shadow:0 0 0 10px rgba(76,194,122,0)}}
+/* ---------- reseñas ---------- */
+.rcard{border:1px solid var(--line);padding:56px 28px;text-align:center;background:radial-gradient(60% 80% at 50% 0%,rgba(201,164,92,.12),transparent 70%)}
+.rcard .stars{color:var(--gold);letter-spacing:.3em;font-size:22px}
+.rcard h2{font-size:clamp(32px,5vw,48px);margin:12px 0}
+.rcard p{color:var(--muted);max-width:480px;margin:0 auto 26px}
+.rcard small{display:block;color:var(--muted-2);font-size:13px;margin-top:16px}
+/* ---------- menú móvil ---------- */
+.burger{display:none;width:46px;height:46px;background:none;border:0;cursor:pointer;position:relative;z-index:2}
+.burger span{position:absolute;left:11px;right:11px;height:2px;background:var(--cream);transition:transform .35s,top .35s}
+.burger span:first-child{top:18px}.burger span:last-child{top:27px}
+.burger[aria-expanded="true"] span:first-child{top:22px;transform:rotate(45deg)}
+.burger[aria-expanded="true"] span:last-child{top:22px;transform:rotate(-45deg)}
+@media (max-width:760px){
+  .burger{display:block}
+  .links{position:fixed;inset:0;background:rgba(12,11,10,.97);flex-direction:column;align-items:center;justify-content:center;gap:34px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+  .links.open{opacity:1;visibility:visible}
+  .links li:not(:last-child){display:block}
+  .links a{font-size:15px;letter-spacing:.3em}
+  .links li{opacity:0;transform:translateY(14px);transition:opacity .4s,transform .4s}
+  .links.open li{opacity:1;transform:none}
+  .links.open li:nth-child(2){transition-delay:.06s}.links.open li:nth-child(3){transition-delay:.12s}.links.open li:nth-child(4){transition-delay:.18s}
+  section.sec{padding-block:72px}
+  .head{margin-bottom:40px}
+  .item h3{font-size:23px}.item .price{font-size:26px}
+  .citas{width:74px;height:74px;right:14px;bottom:14px}.citas svg{width:26px;height:26px}.citas span{font-size:9px}
+  .side{left:14px;bottom:14px}
+  .hero .wrap{padding-block:120px 64px}
+  .hero .ctas .btn{width:100%;max-width:320px}
+  footer{padding-bottom:110px}
+}
+/* ---------- animaciones ---------- */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.js .photo.rv{transform:translateY(28px) scale(.97)}
+.js .photo.rv.in{transform:none}
+.js .photo .stamp{transform:scale(.4) rotate(-40deg);opacity:0;transition:transform .9s cubic-bezier(.3,1.4,.4,1) .45s,opacity .5s .45s}
+.js .photo.in .stamp{transform:none;opacity:1}
+.hero img{animation:kb 18s ease-out both}
+@keyframes kb{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero .wrap>*{animation:up 1s cubic-bezier(.2,.7,.2,1) both}
+.hero .since{animation-delay:.2s}.hero h1{animation-delay:.35s}.hero p{animation-delay:.5s}.hero .status{animation-delay:.6s}.hero .ctas{animation-delay:.7s}
+@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.pole{background-size:79px 79px;animation:pole 3s linear infinite}
+@keyframes pole{to{background-position:79px 0}}
+.item{transition:padding .3s}
+.item:hover{padding-left:10px}
+.item:hover .price{color:var(--cream)}
+.why div{transition:border-color .3s,transform .3s}
+.why div:hover{border-color:var(--gold);transform:translateY(-4px)}
+.citas{animation:pop .8s cubic-bezier(.3,1.5,.5,1) 1.2s both}
+@keyframes pop{from{transform:scale(0)}to{transform:none}}
+.nav{transition:background .4s,border-color .4s}
+@media (prefers-reduced-motion:reduce){.js .rv,.js .photo .stamp{opacity:1!important;transform:none!important}.hero img,.hero .wrap>*,.pole,.citas,.status.open i{animation:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.6-.3Z"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-razor" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30 30 8l6 6-24 22z"/><path d="M30 8l4-4 10 10-4 4"/><path d="M12 36l-4 8"/><path d="M14 26l6 6"/></g></symbol>
+  <symbol id="i-scissors" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="36" r="6"/><circle cx="12" cy="12" r="6"/><path d="M17 15l25 21M17 33l25-21"/></g></symbol>
+  <symbol id="i-chat" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10h32v22H22l-8 7v-7H8z"/><path d="M16 19h16M16 25h10"/></g></symbol>
+  <symbol id="i-coin" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="24" cy="24" r="17"/><path d="M29 17c-1-1.5-3-2.5-5-2.5-3 0-5 1.6-5 4s2 3.2 5 4 5 1.8 5 4.5-2.2 4-5 4c-2.3 0-4.3-1-5.3-2.6M24 11v26"/></g></symbol>
+</svg>
+
+<!-- Número para citas. CONFIRMAR con Amado: Google Maps tiene el 951 519 7707; ¿es WhatsApp o fijo? -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="mark" href="#inicio" aria-label="Peluquería Yardley, inicio"><b>Yardley</b><small>Barbería · 1958</small></a>
+    <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    <ul class="links" id="menu">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#casa">La casa</a></li>
+      <li><a href="#visita">Visítanos</a></li>
+      <li><a class="js-wa" href="#" target="_blank" rel="noopener">Citas</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <img src="img/fachada.jpg" alt="Fachada de la Barbería y Peluquería Yardley en Díaz Ordaz 105, con su letrero pintado a mano y su poste de barbero">
+  <div class="wrap">
+    <span class="since">Desde 1958</span>
+    <h1>Corte clásico, como debe ser.</h1>
+    <p>Barbería y peluquería de barrio en el Centro de Oaxaca. Buena plática, buena música y un corte bien hecho.</p>
+    <p class="status js-status" aria-live="polite"><i></i><span>Lunes a domingo · 11:00 a 21:00</span></p>
+    <div class="ctas">
+      <a class="btn solid js-wa" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agenda tu corte</a>
+      <a class="btn line" href="#servicios">Ver servicios</a>
+    </div>
+  </div>
+</section>
+<div class="pole" aria-hidden="true"></div>
+
+<section class="sec" id="servicios">
+  <div class="wrap">
+    <div class="head rv"><p class="eyebrow">Servicios</p><h2>El menú de la casa</h2><p>Precios claros, sin sorpresas.</p></div>
+    <div class="menu">
+      <div class="item rv"><h3>Corte de cabello</h3><span class="price">$130</span><p>Clásico o moderno, como lo pidas.</p></div>
+      <div class="item rv"><h3>Corte de barba</h3><span class="price">$130</span><p>Arreglo y perfilado de barba.</p></div>
+      <div class="item rv"><h3>Corte de bigote</h3><span class="price">$30</span><p>Perfilado para que se vea en su lugar.</p></div>
+      <div class="item rv"><h3>Mascarilla</h3><span class="price">$130</span><p>Mascarilla facial para limpiar y refrescar la piel.</p></div>
+    </div>
+    <div class="menu-cta rv"><a class="btn line js-wa" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Pregunta por tu lugar</a></div>
+  </div>
+</section>
+
+<section class="sec casa" id="casa">
+  <div class="wrap grid">
+    <div class="photo rv">
+      <img src="img/interior.jpg" alt="Interior de la peluquería: sillón clásico de barbero, espejos y postes de barbería" loading="lazy">
+      <div class="stamp"><span>Desde<b>1958</b>Oaxaca</span></div>
+    </div>
+    <div class="rv">
+      <p class="eyebrow">La casa</p>
+      <h2>Una barbería <em>a la antigüita</em></h2>
+      <p>Yardley, peluquería y barbería, lleva más de seis décadas cortando el pelo en el Centro de Oaxaca. Sillones clásicos, postes de barbero y un letrero pintado a mano que ya es parte de la calle.</p>
+      <p>Aquí atiende <strong>Amado</strong>: un corte con calma, una plática amena y un poco de música. De esos lugares a los que vas una vez y ya no cambias.</p>
+      <a class="btn solid js-wa" href="#" target="_blank" rel="noopener" style="margin-top:12px;background:var(--ink);color:var(--cream);border-color:var(--ink)">Escríbele a Amado</a>
+    </div>
+  </div>
+</section>
+<div class="pole" aria-hidden="true"></div>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="head rv"><p class="eyebrow">Por qué Yardley</p><h2>Lo de siempre, bien hecho</h2></div>
+    <div class="why">
+      <div class="rv"><svg><use href="#i-scissors"/></svg><h3>Oficio de años</h3><p>Una peluquería con historia desde 1958, donde el corte se hace con tiempo y cuidado.</p></div>
+      <div class="rv"><svg><use href="#i-chat"/></svg><h3>Trato de barrio</h3><p>Aquí te conocen por tu nombre. Muchos clientes llevan años sentándose en el mismo sillón.</p></div>
+      <div class="rv"><svg><use href="#i-coin"/></svg><h3>Precio justo</h3><p>Corte desde $130 en pleno Centro. Sin paquetes raros ni letras chiquitas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv"><p class="eyebrow">Galería</p><h2>Cortes de la casa</h2></div>
+    <div class="gal">
+      <!-- SUSTITUIR: fotos reales de cortes terminados (con permiso del cliente) -->
+      <div class="rv">Foto de un corte</div>
+      <div class="rv">Foto de una barba</div>
+      <div class="rv">Foto del local por dentro</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec review" style="padding-top:0">
+  <div class="wrap">
+    <div class="rcard rv">
+      <div class="stars" aria-hidden="true">★★★★★</div>
+      <h2>¿Ya te cortaste en Yardley?</h2>
+      <p>Tu reseña ayuda a que más gente encuentre una barbería de las de antes. Te toma un minuto.</p>
+      <a class="btn solid" href="https://www.google.com/maps?cid=16937028283605904926" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3Z"/><path fill="currentColor" d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22Z" opacity=".8"/><path fill="currentColor" d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1a10 10 0 0 0 0 9.2L6.4 14Z" opacity=".6"/><path fill="currentColor" d="M12 6c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.4L6.4 10C7.2 7.7 9.4 6 12 6Z" opacity=".9"/></svg>Déjanos tu reseña en Google</a>
+      <small>Se abre la ficha de Yardley en Google Maps: toca <b>“Escribir una reseña”</b>.</small>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="visita" style="padding-top:0">
+  <div class="wrap visit rv">
+    <div class="info">
+      <p class="eyebrow">Visítanos</p>
+      <h2>Te esperamos en el Centro</h2>
+      <dl>
+        <div><dt>Dirección</dt><dd>Díaz Ordaz 105, Centro, Oaxaca de Juárez</dd></div>
+        <!-- CONFIRMAR con Amado: abre todos los días -->
+        <div><dt>Horario</dt><dd>Lunes a domingo · 11:00 a 21:00<br><span class="status js-status"><i></i><span></span></span></dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+529515197707">951 519 7707</a></dd></div>
+        <!-- SUSTITUIR si cambia: Facebook de la peluquería -->
+        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/share/175uvnZHYD/" target="_blank" rel="noopener">Peluquería Yardley</a></dd></div>
+      </dl>
+    </div>
+    <iframe title="Mapa: Peluquería Yardley, Díaz Ordaz 105, Centro, Oaxaca" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Peluquer%C3%ADa%20Yardley%2C%20D%C3%ADaz%20Ordaz%20105%2C%20Centro%2C%20Oaxaca&output=embed"></iframe>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="mark" href="#inicio"><b>Yardley</b><small>Barbería · Peluquería · desde 1958</small></a>
+    <p>Barbería y peluquería clásica · Díaz Ordaz 105, Centro, Oaxaca</p>
+    <p><a href="https://www.google.com/maps?cid=16937028283605904926" target="_blank" rel="noopener">Déjanos tu reseña en Google</a> · Propuesta de sitio por Nexo Digital</p>
+  </div>
+</footer>
+
+<a class="citas js-wa" href="#" target="_blank" rel="noopener" aria-label="Agendar cita por WhatsApp"><div><svg><use href="#i-razor"/></svg><span>CITAS</span></div></a>
+<div class="side"><a href="tel:+529515197707" aria-label="Llamar"><svg><use href="#i-tel"/></svg></a></div>
+
+<script>
+const WHATSAPP = '529515197707'; // CONFIRMAR con Amado
+const MSG = 'Hola Amado, quiero agendar un corte. ¿Qué horario tienes disponible?';
+document.querySelectorAll('.js-wa').forEach(a => a.href = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(MSG));
+const nav = document.getElementById('nav');
+const onScroll = () => nav.classList.toggle('solid', scrollY > 40);
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+// --- abierto / cerrado (hora de Oaxaca) ---
+const OPEN = 11, CLOSE = 21; // todos los días. CONFIRMAR con Amado
+function updateStatus(){
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Mexico_City' }));
+  const h = now.getHours() + now.getMinutes() / 60;
+  const open = h >= OPEN && h < CLOSE;
+  const txt = open ? 'Abierto · cierra 9 pm' : (h < OPEN ? 'Cerrado · abre a las 11 am' : 'Cerrado · abre mañana 11 am');
+  document.querySelectorAll('.js-status').forEach(el => { el.classList.toggle('open', open); el.classList.toggle('closed', !open); el.querySelector('span').textContent = txt; });
+}
+updateStatus(); setInterval(updateStatus, 60000);
+// --- menú móvil ---
+const burger = document.getElementById('burger'), menu = document.getElementById('menu');
+const setMenu = o => { menu.classList.toggle('open', o); burger.setAttribute('aria-expanded', String(o)); document.body.style.overflow = o ? 'hidden' : ''; };
+burger.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
+menu.addEventListener('click', e => {
+  const a = e.target.closest('a'); if (!a) return;
+  setMenu(false);
+  const id = a.getAttribute('href');
+  if (id && id.startsWith('#') && id.length > 1) {
+    e.preventDefault();
+    const t = document.querySelector(id);
+    if (t) setTimeout(() => t.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }), 30);
+    history.replaceState(null, '', id);
+  }
+});
+addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+// --- aparecer al hacer scroll ---
+const groups = new Map();
+document.querySelectorAll('.rv').forEach(el => { const k = el.parentElement; const n = groups.get(k) || 0; el.style.setProperty('--d', (n * 0.09) + 's'); groups.set(k, n + 1); });
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+} else document.querySelectorAll('.rv').forEach(el => el.classList.add('in'));
+// respaldo: si el navegador no avisa al observer, revisa al hacer scroll
+const sweep = () => document.querySelectorAll('.rv:not(.in)').forEach(el => { if (el.getBoundingClientRect().top < innerHeight - 40) el.classList.add('in'); });
+let sw; addEventListener('scroll', () => { clearTimeout(sw); sw = setTimeout(sweep, 120); }, { passive: true }); setTimeout(sweep, 400);
+</script>
+</body>
+</html>
